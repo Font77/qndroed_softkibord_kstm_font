@@ -527,15 +527,15 @@ public class softqibord extends InputMethodService implements KeyboardView.OnKey
                 primaryCode = Character.toUpperCase(primaryCode);
             }
         }
-        if (isAlphabet(primaryCode) && mPredictionOn) {
+//        if (isAlphabet(primaryCode) && mPredictionOn) {
             mComposing.append((char) primaryCode);
             getCurrentInputConnection().setComposingText(mComposing, 1);
             // updateShiftKeyState(getCurrentInputEditorInfo());
             updateCandidates();
-        } else {
-            getCurrentInputConnection().commitText(
-                    String.valueOf((char) primaryCode), 1);
-        }
+//        } else {
+//            getCurrentInputConnection().commitText(
+//                    String.valueOf((char) primaryCode), 1);
+//        }
     }
     private void handleClose() {
         commitTyped(getCurrentInputConnection());
