@@ -49,10 +49,10 @@ public class softqibord extends InputMethodService implements KeyboardView.OnKey
     private long mLastShiftTime;
     private long mMetaState;
 
-    private lAtinqibord mSymbolsKeyboard;
     private lAtinqibord mSymbolsKeyboard1;
-    private lAtinqibord mSymbolsShiftedKeyboard;
-    private lAtinqibord mQwertyKeyboard;
+    private lAtinqibord mSymbolsKeyboard2;
+    private lAtinqibord mSymbolsKeyboard3;
+    private lAtinqibord mSymbolsKeyboard4;
 
     private lAtinqibord mCurKeyboard;
 
@@ -73,7 +73,7 @@ public class softqibord extends InputMethodService implements KeyboardView.OnKey
      * is called after creation and any configuration change.
      */
     @Override public void onInitializeInterface() {
-        if (mQwertyKeyboard != null) {
+        if (mSymbolsKeyboard1 != null) {
             // Configuration changes can happen after the keyboard gets recreated,
             // so we need to be able to re-build the keyboards if the available
             // space has changed.
@@ -81,10 +81,10 @@ public class softqibord extends InputMethodService implements KeyboardView.OnKey
             if (displayWidth == mLastDisplayWidth) return;
             mLastDisplayWidth = displayWidth;
         }
-        mQwertyKeyboard = new lAtinqibord(this, R.xml.qwerty);
-        mSymbolsKeyboard = new lAtinqibord(this, R.xml.symbols);
         mSymbolsKeyboard1 = new lAtinqibord(this, R.xml.symbols1);
-        mSymbolsShiftedKeyboard = new lAtinqibord(this, R.xml.symbols_shift);
+        mSymbolsKeyboard2 = new lAtinqibord(this, R.xml.symbols2);
+        mSymbolsKeyboard3 = new lAtinqibord(this, R.xml.symbols3);
+        mSymbolsKeyboard4 = new lAtinqibord(this, R.xml.symbols4);
     }
 
     /**
@@ -96,7 +96,7 @@ public class softqibord extends InputMethodService implements KeyboardView.OnKey
     @Override public View onCreateInputView() {
         mInputView = (lAtinqibordviyu) getLayoutInflater().inflate(R.layout.input, null);
         mInputView.setOnKeyboardActionListener(this);
-        setlAtinqibord(mQwertyKeyboard);
+        setlAtinqibord(mSymbolsKeyboard1);
         return mInputView;
     }
     private void setlAtinqibord(lAtinqibord nextKeyboard) {
@@ -121,9 +121,9 @@ public class softqibord extends InputMethodService implements KeyboardView.OnKey
         if (!restarting) { mMetaState = 0; }// Clear shift states.
         mPredictionOn = false; mCompletionOn = false; mCompletions = null;
         switch (attribute.inputType & InputType.TYPE_MASK_CLASS) {
-            case InputType.TYPE_CLASS_NUMBER: case InputType.TYPE_CLASS_DATETIME: mCurKeyboard = mSymbolsKeyboard; break;
-            case InputType.TYPE_CLASS_PHONE: mCurKeyboard = mSymbolsKeyboard; break; 
-            case InputType.TYPE_CLASS_TEXT: mCurKeyboard = mQwertyKeyboard; mPredictionOn = true;
+            case InputType.TYPE_CLASS_NUMBER: case InputType.TYPE_CLASS_DATETIME: mCurKeyboard = mSymbolsKeyboard3; break;
+            case InputType.TYPE_CLASS_PHONE: mCurKeyboard = mSymbolsKeyboard3; break;
+            case InputType.TYPE_CLASS_TEXT: mCurKeyboard = mSymbolsKeyboard1; mPredictionOn = true;
                 int variation = attribute.inputType & InputType.TYPE_MASK_VARIATION;
                 if (variation == InputType.TYPE_TEXT_VARIATION_PASSWORD || variation == InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD) {
                     mPredictionOn = false;
@@ -136,7 +136,7 @@ public class softqibord extends InputMethodService implements KeyboardView.OnKey
                     mCompletionOn = isFullscreenMode();
                 }
                 break;
-            default: mCurKeyboard = mQwertyKeyboard; // updateShiftKeyState(attribute);
+            default: mCurKeyboard = mSymbolsKeyboard1; // updateShiftKeyState(attribute);
         }
 
         // Update the label on the enter key, depending on what the application
@@ -160,7 +160,7 @@ public class softqibord extends InputMethodService implements KeyboardView.OnKey
         // its window.
         setCandidatesViewShown(false);
 
-        mCurKeyboard = mQwertyKeyboard;
+        mCurKeyboard = mSymbolsKeyboard1;
         if (mInputView != null) {
             mInputView.closing();
         }
@@ -355,17 +355,17 @@ public class softqibord extends InputMethodService implements KeyboardView.OnKey
      * Helper to update the shift state of our keyboard based on the initial
      * editor state.
      */
-    private void updateShiftKeyState(EditorInfo attr) {
-        if (attr != null
-                && mInputView != null && mQwertyKeyboard == mInputView.getKeyboard()) {
-            int caps = 0;
-            EditorInfo ei = getCurrentInputEditorInfo();
-            if (ei != null && ei.inputType != InputType.TYPE_NULL) {
-                caps = getCurrentInputConnection().getCursorCapsMode(attr.inputType);
-            }
-            mInputView.setShifted(mCapsLock || caps != 0);
-        }
-    }
+//    private void updateShiftKeyState(EditorInfo attr) {
+//        if (attr != null
+//                && mInputView != null && mSymbolsKeyboard1 == mInputView.getKeyboard()) {
+//            int caps = 0;
+//            EditorInfo ei = getCurrentInputEditorInfo();
+//            if (ei != null && ei.inputType != InputType.TYPE_NULL) {
+//                caps = getCurrentInputConnection().getCursorCapsMode(attr.inputType);
+//            }
+//            mInputView.setShifted(mCapsLock || caps != 0);
+//        }
+//    }
 
     /**
      * Helper to determine if a given character code is alphabetic.
@@ -429,17 +429,17 @@ public class softqibord extends InputMethodService implements KeyboardView.OnKey
         } else if (primaryCode == Keyboard.KEYCODE_MODE_CHANGE
                 && mInputView != null) {
             Keyboard current = mInputView.getKeyboard();
-            if (current == mQwertyKeyboard) {
+            if (current == mSymbolsKeyboard1) {
+                setlAtinqibord(mSymbolsKeyboard2);
+            } else if (current == mSymbolsKeyboard2) {
+                setlAtinqibord(mSymbolsKeyboard3);
+//                mSymbolsKeyboard3.setShifted(false);
+            } else if (current == mSymbolsKeyboard3) {
+                setlAtinqibord(mSymbolsKeyboard4);
+//                mSymbolsKeyboard3.setShifted(false);
+            } else if (current == mSymbolsKeyboard4) {
                 setlAtinqibord(mSymbolsKeyboard1);
-            } else if (current == mSymbolsKeyboard1) {
-                setlAtinqibord(mSymbolsKeyboard);
-//                mSymbolsKeyboard.setShifted(false);
-            } else if (current == mSymbolsKeyboard) {
-                setlAtinqibord(mSymbolsShiftedKeyboard);
-//                mSymbolsKeyboard.setShifted(false);
-            } else if (current == mSymbolsShiftedKeyboard) {
-                setlAtinqibord(mQwertyKeyboard);
-//                mSymbolsKeyboard.setShifted(false);
+//                mSymbolsKeyboard3.setShifted(false);
             }
         } else {
             handleCharacter(primaryCode, keyCodes);
@@ -506,18 +506,18 @@ public class softqibord extends InputMethodService implements KeyboardView.OnKey
         }
 
         Keyboard currentKeyboard = mInputView.getKeyboard();
-        if (mQwertyKeyboard == currentKeyboard) {
+        if (mSymbolsKeyboard3 == currentKeyboard) {
             // Alphabet keyboard
             checkToggleCapsLock();
             mInputView.setShifted(mCapsLock || !mInputView.isShifted());
-        } else if (currentKeyboard == mSymbolsKeyboard) {
-            mSymbolsKeyboard.setShifted(true);
-            setlAtinqibord(mSymbolsShiftedKeyboard);
-            mSymbolsShiftedKeyboard.setShifted(true);
-        } else if (currentKeyboard == mSymbolsShiftedKeyboard) {
-            mSymbolsShiftedKeyboard.setShifted(false);
-            setlAtinqibord(mSymbolsKeyboard);
-            mSymbolsKeyboard.setShifted(false);
+        } else if (currentKeyboard == mSymbolsKeyboard3) {
+            mSymbolsKeyboard3.setShifted(true);
+            setlAtinqibord(mSymbolsKeyboard4);
+            mSymbolsKeyboard4.setShifted(true);
+        } else if (currentKeyboard == mSymbolsKeyboard4) {
+            mSymbolsKeyboard4.setShifted(false);
+            setlAtinqibord(mSymbolsKeyboard3);
+            mSymbolsKeyboard3.setShifted(false);
         }
     }
 
