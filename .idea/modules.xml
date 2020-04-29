@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/softqibord.iml" filepath="$PROJECT_DIR$/softqibord.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="qndroed_softkibord_kstm_font/app" />
+      <module fileurl="file://$PROJECT_DIR$/qndroed_softkibord_kstm_font.iml" filepath="$PROJECT_DIR$/qndroed_softkibord_kstm_font.iml" group="qndroed_softkibord_kstm_font" />
     </modules>
   </component>
 </project>
