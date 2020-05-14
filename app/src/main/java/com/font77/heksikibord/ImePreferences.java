@@ -1,15 +1,8 @@
-package com.font77.softqibord;
-
+package com.font77.heksikibord;
 import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
-
 import com.android.inputmethodcommon.InputMethodSettingsFragment;
-
-/**
- * Created by DELL on 3/30/2017.
- */
-
 public class ImePreferences extends PreferenceActivity {
     @Override
     public Intent getIntent() {
@@ -34,7 +27,6 @@ public class ImePreferences extends PreferenceActivity {
             super.onCreate(savedInstanceState);
             setInputMethodSettingsCategoryTitle(R.string.language_selection_title);
             setSubtypeEnablerTitle(R.string.select_language);
-            // Load the preferences from an XML resource
             addPreferencesFromResource(R.xml.ime_preferences);
         }
     }

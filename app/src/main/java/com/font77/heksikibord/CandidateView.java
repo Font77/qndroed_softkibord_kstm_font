@@ -1,5 +1,4 @@
-package com.font77.softqibord;
-
+package com.font77.heksikibord;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Canvas;
@@ -13,13 +12,9 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by DELL on 3/30/2017.
- */
-
 public class CandidateView extends View {
     private static final int OUT_OF_BOUNDS = -1;
-    private softqibord mService;
+    private heksikibord mService;
     private List<String> mSuggestions;
     private int mSelectedIndex;
     private int mTouchX = OUT_OF_BOUNDS;
@@ -105,7 +100,7 @@ public class CandidateView extends View {
      * A connection back to the service to communicate with the text field
      * @param listener
      */
-    public void setService(softqibord listener) {
+    public void setService(heksikibord listener) {
         mService = listener;
     }
 

@@ -1,4 +1,4 @@
-package com.font77.softqibord;
+package com.font77.heksikibord;
 
 import android.content.Context;
 import android.inputmethodservice.Keyboard;

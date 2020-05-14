@@ -1,16 +1,9 @@
 package com.android.inputmethodcommon;
-
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
-
 import com.android.inputmethodcommon.InputMethodSettingsInterface;
-
-/**
- * Created by DELL on 3/31/2017.
- */
-
 public abstract class InputMethodSettingsFragment extends PreferenceFragment implements InputMethodSettingsInterface {
     private final InputMethodSettingsImpl mSettings = new InputMethodSettingsImpl();
     @Override
@@ -20,61 +13,22 @@ public abstract class InputMethodSettingsFragment extends PreferenceFragment imp
         setPreferenceScreen(getPreferenceManager().createPreferenceScreen(context));
         mSettings.init(context, getPreferenceScreen());
     }
-
-    /**
-     * {@inheritDoc}
-     */
     @Override
-    public void setInputMethodSettingsCategoryTitle(int resId) {
-        mSettings.setInputMethodSettingsCategoryTitle(resId);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
+    public void setInputMethodSettingsCategoryTitle(int resId) { mSettings.setInputMethodSettingsCategoryTitle(resId); }
     @Override
-    public void setInputMethodSettingsCategoryTitle(CharSequence title) {
-        mSettings.setInputMethodSettingsCategoryTitle(title);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
+    public void setInputMethodSettingsCategoryTitle(CharSequence title) { mSettings.setInputMethodSettingsCategoryTitle(title); }
     @Override
     public void setSubtypeEnablerTitle(int resId) {
         mSettings.setSubtypeEnablerTitle(resId);
     }
-
-    /**
-     * {@inheritDoc}
-     */
     @Override
-    public void setSubtypeEnablerTitle(CharSequence title) {
-        mSettings.setSubtypeEnablerTitle(title);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
+    public void setSubtypeEnablerTitle(CharSequence title) { mSettings.setSubtypeEnablerTitle(title); }
     @Override
     public void setSubtypeEnablerIcon(int resId) {
         mSettings.setSubtypeEnablerIcon(resId);
     }
-
-    /**
-     * {@inheritDoc}
-     */
     @Override
-    public void setSubtypeEnablerIcon(Drawable drawable) {
-        mSettings.setSubtypeEnablerIcon(drawable);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
+    public void setSubtypeEnablerIcon(Drawable drawable) { mSettings.setSubtypeEnablerIcon(drawable); }
     @Override
-    public void onResume() {
-        super.onResume();
-        mSettings.updateSubtypeEnabler();
-    }
+    public void onResume() { super.onResume();mSettings.updateSubtypeEnabler(); }
 }

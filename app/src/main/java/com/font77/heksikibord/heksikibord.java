@@ -1,5 +1,4 @@
-package com.font77.softqibord;
-
+package com.font77.heksikibord;
 import android.app.Dialog;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
@@ -16,25 +15,10 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputMethodManager;
 import android.view.inputmethod.InputMethodSubtype;
-
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- * Created by DELL on 3/30/2017.
- */
-
-public class softqibord extends InputMethodService implements KeyboardView.OnKeyboardActionListener {
+public class heksikibord extends InputMethodService implements KeyboardView.OnKeyboardActionListener {
     static final boolean DEBUG = false;
-
-    /**
-     * This boolean indicates the optional example code for performing
-     * processing of hard keys in addition to regular text generation
-     * from on-screen interaction.  It would be used for input methods that
-     * perform language translations (such as converting text entered on
-     * a QWERTY keyboard to Chinese), but may not be used for input methods
-     * that are primarily intended to be used for on-screen text entry.
-     */
     static final boolean PROCESS_HARD_KEYS = true;
     private InputMethodManager mInputMethodManager;
     private lAtinqibordviyu mInputView;
@@ -53,30 +37,15 @@ public class softqibord extends InputMethodService implements KeyboardView.OnKey
     private lAtinqibord mSymbolsKeyboard2;
     private lAtinqibord mSymbolsKeyboard3;
     private lAtinqibord mSymbolsKeyboard4;
-
     private lAtinqibord mCurKeyboard;
-
     private String mWordSeparators;
-
-    /**
-     * Main initialization of the input method component.  Be sure to call
-     * to super class.
-     */
     @Override public void onCreate() {
         super.onCreate();
         mInputMethodManager = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
         mWordSeparators = getResources().getString(R.string.word_separators);
     }
-
-    /**
-     * This is the point where you can do all of your UI initialization.  It
-     * is called after creation and any configuration change.
-     */
     @Override public void onInitializeInterface() {
         if (mSymbolsKeyboard1 != null) {
-            // Configuration changes can happen after the keyboard gets recreated,
-            // so we need to be able to re-build the keyboards if the available
-            // space has changed.
             int displayWidth = getMaxWidth();
             if (displayWidth == mLastDisplayWidth) return;
             mLastDisplayWidth = displayWidth;
@@ -86,13 +55,6 @@ public class softqibord extends InputMethodService implements KeyboardView.OnKey
         mSymbolsKeyboard3 = new lAtinqibord(this, R.xml.symbols3);
         mSymbolsKeyboard4 = new lAtinqibord(this, R.xml.symbols4);
     }
-
-    /**
-     * Called by the framework when your view for creating input needs to
-     * be generated.  This will be called the first time your input method
-     * is displayed, and every time it needs to be re-created such as due to
-     * a configuration change.
-     */
     @Override public View onCreateInputView() {
         mInputView = (lAtinqibordviyu) getLayoutInflater().inflate(R.layout.input, null);
         mInputView.setOnKeyboardActionListener(this);
@@ -104,10 +66,6 @@ public class softqibord extends InputMethodService implements KeyboardView.OnKey
         nextKeyboard.setLanguageSwitchKeyVisibility(shouldSupportLanguageSwitchKey);
         mInputView.setKeyboard(nextKeyboard);
     }
-    /**
-     * Called by the framework when your view for showing candidates needs to
-     * be generated, like {@link #onCreateInputView}.
-     */
     @Override public View onCreateCandidatesView() {
         mCandidateView = new CandidateView(this);
         mCandidateView.setService(this);

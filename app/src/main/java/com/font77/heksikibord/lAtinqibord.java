@@ -1,4 +1,4 @@
-package com.font77.softqibord;
+package com.font77.heksikibord;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -6,10 +6,6 @@ import android.content.res.XmlResourceParser;
 import android.graphics.drawable.Drawable;
 import android.inputmethodservice.Keyboard;
 import android.view.inputmethod.EditorInfo;
-
-/**
- * Created by DELL on 3/30/2017.
- */
 
 public class lAtinqibord extends Keyboard {
     private Key mEnterKey;
@@ -22,8 +18,7 @@ public class lAtinqibord extends Keyboard {
     public lAtinqibord(Context context, int xmlLayoutResId) {
         super(context, xmlLayoutResId);
     }
-    public lAtinqibord(Context context, int layoutTemplateResId,
-                         CharSequence characters, int columns, int horizontalPadding) {
+    public lAtinqibord(Context context, int layoutTemplateResId, CharSequence characters, int columns, int horizontalPadding) {
         super(context, layoutTemplateResId, characters, columns, horizontalPadding);
     }
     @Override
