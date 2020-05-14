@@ -5,7 +5,6 @@ import android.support.v4.content.res.ResourcesCompat;
 import java.lang.reflect.Field;
 
 public final class fontsovArride {
-    //public static void setDefaultFont(Context context, String staticTypefaceFieldName, String fontName) {
     public static void setDefaultFont(Context context, String staticTypefaceFieldName, int newTypefaceint) {
         final Typeface regular = ResourcesCompat.getFont(context, newTypefaceint);
         replaceFont(staticTypefaceFieldName, regular);

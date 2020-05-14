@@ -7,50 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ae2b813-f411-4380-a94d-37d7a7f2d32f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/ddssmonodc.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/roboto_heks_jk.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/roboto_heks_zk.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/constraint_layout_1_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/constraint_layout_solver_1_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_25_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/support_compat_25_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_25_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_3_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/release/app-release.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/app-release.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/android/inputmethodcommon/InputMethodSettingsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/android/inputmethodcommon/InputMethodSettingsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/android/inputmethodcommon/InputMethodSettingsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/android/inputmethodcommon/InputMethodSettingsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/android/inputmethodcommon/InputMethodSettingsInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/android/inputmethodcommon/InputMethodSettingsInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/font77/softqibord/CandidateView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/CandidateView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/font77/softqibord/ImePreferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/ImePreferences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/font77/softqibord/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/MyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/font77/softqibord/fontsovArride.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/fontsovArride.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/font77/softqibord/lAtinqibord.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/lAtinqibord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/font77/softqibord/lAtinqibordviyu.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/lAtinqibordviyu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/font77/softqibord/softqibord.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/heksikibord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/del/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/del/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/input.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/input.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/ime_preferences.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/ime_preferences.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/method.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/method.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/symbols1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/symbols1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/symbols2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/symbols2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/symbols3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/symbols3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/symbols4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/symbols4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/fonts/abc27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/fonts/ddssmonodc.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/fonts/roboto_heks_jk.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/fonts/roboto_heks_zk.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/MyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/fontsovArride.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/fontsovArride.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
