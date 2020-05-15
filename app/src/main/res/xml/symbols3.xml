@@ -17,33 +17,34 @@
         <Key android:codes="80" android:keyLabel="P"/>
         <Key android:codes="86" android:keyLabel="V"/>
         <Key android:codes="87" android:keyLabel="W"/>
-        <Key android:codes="65" android:keyLabel="A"/>
-        <Key android:codes="66" android:keyLabel="B"/>
-        <Key android:codes="39" android:keyLabel="\'"/>
-        <Key android:codes="39" android:keyLabel="\'"/>
-        <Key android:codes="39" android:keyLabel="\'"/>
-        <Key android:codes="77" android:keyLabel="M" android:keyEdgeFlags="right"/>        
+        <Key android:codes="87" android:keyLabel="M"/>
+        <Key android:codes="87" android:keyLabel="T"/>
+        <Key android:codes="39" android:keyLabel="m1"/>
+        <Key android:codes="39" android:keyLabel="m2"/>
+        <Key android:codes="-1" android:keyLabel="sf'"/>
+        <Key android:codes="77" android:keyLabel="tb" android:keyWidth="10%p" android:keyEdgeFlags="right"/>        
     </Row>
     <Row>
-        <Key android:codes="64" android:keyLabel="\@" android:keyWidth="10%p" android:keyEdgeFlags="left"/>
-        <Key android:codes="84" android:keyLabel="T"/>
-        <Key android:codes="84" android:keyLabel="T"/>
-        <Key android:codes="84" android:keyLabel="T"/>
-        <Key android:codes="84" android:keyLabel="T"/>
-        <Key android:codes="84" android:keyLabel="T"/>
-        <Key android:codes="84" android:keyLabel="T"/>
-        <Key android:codes="84" android:keyLabel="T"/>
-        <Key android:codes="84" android:keyLabel="T"/>
+        <Key android:codes="96" android:keyLabel="`" android:keyWidth="10%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="36" android:keyLabel="$"/>
+        <Key android:codes="42" android:keyLabel="*"/>
+        <Key android:codes="91" android:keyLabel="["/>
+        <Key android:codes="93" android:keyLabel="]"/>
+        <Key android:codes="123" android:keyLabel="{"/>
+        <Key android:codes="125" android:keyLabel="}"/>
+        <Key android:codes="92" android:keyLabel="\\"/>
+        <Key android:codes="39" android:keyLabel="'"/>
         <Key android:codes="-5" android:keyIcon="@drawable/sym_keyboard_delete" android:keyWidth="10%p" android:keyEdgeFlags="right" android:isRepeatable="true"/>
     </Row>
     <Row android:rowEdgeFlags="bottom">
         <Key android:codes="-3" android:keyIcon="@drawable/sym_keyboard_done" android:keyWidth="15%p" android:keyEdgeFlags="left"/>
         <Key android:codes="-2" android:keyLabel="a1F" android:keyWidth="10%p"/><Key android:codes="-101" android:keyLabel="" android:keyWidth="0%p"/>
-        <Key android:codes="32" android:keyLabel="  " android:keyWidth="15%p" android:isRepeatable="true"/>
+        <Key android:codes="-6" android:keyLabel="alt" android:keyWidth="10%p" android:isRepeatable="true"/>
         <Key android:codes="46" android:keyLabel="." android:keyWidth="10%p"/>
         <Key android:codes="70" android:keyLabel="F" android:keyWidth="10%p"/>
         <Key android:codes="44" android:keyLabel="," android:keyWidth="10%p"/>
         <Key android:codes="95" android:keyLabel="_" android:keyWidth="10%p"/>
-        <Key android:codes="10" android:keyIcon="@drawable/sym_keyboard_return" android:keyWidth="20%p" android:keyEdgeFlags="right"/>
+        <Key android:codes="95" android:keyLabel="_" android:keyWidth="10%p"/>
+        <Key android:codes="10" android:keyIcon="@drawable/sym_keyboard_return" android:keyWidth="15%p" android:keyEdgeFlags="right"/>
     </Row>
 </Keyboard>

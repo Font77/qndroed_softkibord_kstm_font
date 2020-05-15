@@ -36,7 +36,6 @@ public class heksikibord extends InputMethodService implements KeyboardView.OnKe
     private lAtinqibord mSymbolsKeyboard1;
     private lAtinqibord mSymbolsKeyboard2;
     private lAtinqibord mSymbolsKeyboard3;
-    private lAtinqibord mSymbolsKeyboard4;
     private lAtinqibord mCurKeyboard;
     private String mWordSeparators;
     @Override public void onCreate() {
@@ -53,7 +52,6 @@ public class heksikibord extends InputMethodService implements KeyboardView.OnKe
         mSymbolsKeyboard1 = new lAtinqibord(this, R.xml.symbols1);
         mSymbolsKeyboard2 = new lAtinqibord(this, R.xml.symbols2);
         mSymbolsKeyboard3 = new lAtinqibord(this, R.xml.symbols3);
-        mSymbolsKeyboard4 = new lAtinqibord(this, R.xml.symbols4);
     }
     @Override public View onCreateInputView() {
         mInputView = (lAtinqibordviyu) getLayoutInflater().inflate(R.layout.input, null);
@@ -384,24 +382,12 @@ public class heksikibord extends InputMethodService implements KeyboardView.OnKe
             return;
         } else if (primaryCode == lAtinqibordviyu.KEYCODE_OPTIONS) {
             // Show a menu or somethin'
-        } else if (primaryCode == Keyboard.KEYCODE_MODE_CHANGE
-                && mInputView != null) {
+        } else if (primaryCode == Keyboard.KEYCODE_MODE_CHANGE && mInputView != null) {
             Keyboard current = mInputView.getKeyboard();
-            if (current == mSymbolsKeyboard1) {
-                setlAtinqibord(mSymbolsKeyboard2);
-            } else if (current == mSymbolsKeyboard2) {
-                setlAtinqibord(mSymbolsKeyboard3);
-//                mSymbolsKeyboard3.setShifted(false);
-            } else if (current == mSymbolsKeyboard3) {
-                setlAtinqibord(mSymbolsKeyboard4);
-//                mSymbolsKeyboard3.setShifted(false);
-            } else if (current == mSymbolsKeyboard4) {
-                setlAtinqibord(mSymbolsKeyboard1);
-//                mSymbolsKeyboard3.setShifted(false);
-            }
-        } else {
-            handleCharacter(primaryCode, keyCodes);
-        }
+            if (current == mSymbolsKeyboard1) setlAtinqibord(mSymbolsKeyboard2);
+            else if (current == mSymbolsKeyboard2) setlAtinqibord(mSymbolsKeyboard3);
+            else if (current == mSymbolsKeyboard3) setlAtinqibord(mSymbolsKeyboard1);
+        } else handleCharacter(primaryCode, keyCodes);
     }
     public void onText(CharSequence text) {
         InputConnection ic = getCurrentInputConnection();
@@ -459,21 +445,15 @@ public class heksikibord extends InputMethodService implements KeyboardView.OnKe
         // updateShiftKeyState(getCurrentInputEditorInfo());
     }
     private void handleShift() {
-        if (mInputView == null) {
-            return;
-        }
-
+        if (mInputView == null) return;
         Keyboard currentKeyboard = mInputView.getKeyboard();
-        if (mSymbolsKeyboard3 == currentKeyboard) {
-            // Alphabet keyboard
-            checkToggleCapsLock();
-            mInputView.setShifted(mCapsLock || !mInputView.isShifted());
+        if (mSymbolsKeyboard3 == currentKeyboard) { checkToggleCapsLock();mInputView.setShifted(mCapsLock || !mInputView.isShifted());
         } else if (currentKeyboard == mSymbolsKeyboard3) {
             mSymbolsKeyboard3.setShifted(true);
-            setlAtinqibord(mSymbolsKeyboard4);
-            mSymbolsKeyboard4.setShifted(true);
-        } else if (currentKeyboard == mSymbolsKeyboard4) {
-            mSymbolsKeyboard4.setShifted(false);
+            setlAtinqibord(mSymbolsKeyboard1);
+            mSymbolsKeyboard1.setShifted(true);
+        } else if (currentKeyboard == mSymbolsKeyboard1) {
+            mSymbolsKeyboard1.setShifted(false);
             setlAtinqibord(mSymbolsKeyboard3);
             mSymbolsKeyboard3.setShifted(false);
         }
