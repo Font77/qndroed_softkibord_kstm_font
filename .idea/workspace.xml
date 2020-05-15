@@ -9,12 +9,10 @@
     <list default="true" id="3ae2b813-f411-4380-a94d-37d7a7f2d32f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/release/app-release.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/app-release.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/fonts/abc27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/fonts/ddssmonodc.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/fonts/roboto_heks_jk.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/fonts/roboto_heks_zk.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/MyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/fontsovArride.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/fontsovArride.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/symbols1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/symbols1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/symbols2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/symbols2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/symbols3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/symbols3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/symbols4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/symbols4.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
