@@ -31,7 +31,7 @@
         <Key android:codes="118" android:keyLabel="v"/>
         <Key android:codes="109" android:keyLabel="m"/>
         <Key android:codes="110" android:keyLabel="n"/>
-        <Key android:codes="34" android:keyLabel="&quot;"/>
+        <Key android:codes="46" android:keyLabel="."/>
         <Key android:codes="95" android:keyLabel="_" android:keyWidth="10%p"/>
         <Key android:codes="64" android:keyLabel="\@" android:keyWidth="10%p"/>
         <Key android:codes="-5" android:keyIcon="@drawable/sym_keyboard_delete" android:keyWidth="10%p" android:keyEdgeFlags="right" android:isRepeatable="true"/>

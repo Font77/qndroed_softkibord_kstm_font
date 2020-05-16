@@ -19,14 +19,15 @@
         <Key android:codes="87" android:keyLabel="W"/>
         <Key android:codes="87" android:keyLabel="M"/>
         <Key android:codes="87" android:keyLabel="T"/>
-        <Key android:codes="39" android:keyLabel="m1"/>
-        <Key android:codes="39" android:keyLabel="m2"/>
-        <Key android:codes="-1" android:keyLabel="sf'"/>
-        <Key android:codes="77" android:keyLabel="tb" android:keyWidth="10%p" android:keyEdgeFlags="right"/>        
+        <Key android:codes="36" android:keyLabel="$"/>
+        <Key android:codes="39" android:keyLabel="lmi"/>
+        <Key android:codes="39" android:keyLabel="rmi"/>
+        <!--        <Key android:codes="-1" android:keyLabel="sf'"/>-->
+        <Key android:codes="77" android:keyLabel="tqb" android:keyWidth="10%p" android:keyEdgeFlags="right"/>
     </Row>
     <Row>
         <Key android:codes="96" android:keyLabel="`" android:keyWidth="10%p" android:keyEdgeFlags="left"/>
-        <Key android:codes="36" android:keyLabel="$"/>
+        <Key android:codes="34" android:keyLabel="&quot;"/>
         <Key android:codes="42" android:keyLabel="*"/>
         <Key android:codes="91" android:keyLabel="["/>
         <Key android:codes="93" android:keyLabel="]"/>
@@ -38,13 +39,13 @@
     </Row>
     <Row android:rowEdgeFlags="bottom">
         <Key android:codes="-3" android:keyIcon="@drawable/sym_keyboard_done" android:keyWidth="15%p" android:keyEdgeFlags="left"/>
-        <Key android:codes="-2" android:keyLabel="a1F" android:keyWidth="10%p"/><Key android:codes="-101" android:keyLabel="" android:keyWidth="0%p"/>
+        <Key android:codes="-2" android:keyLabel="a1" android:keyWidth="10%p"/><Key android:codes="-101" android:keyLabel="" android:keyWidth="0%p"/>
         <Key android:codes="-6" android:keyLabel="alt" android:keyWidth="10%p" android:isRepeatable="true"/>
-        <Key android:codes="46" android:keyLabel="." android:keyWidth="10%p"/>
-        <Key android:codes="70" android:keyLabel="F" android:keyWidth="10%p"/>
-        <Key android:codes="44" android:keyLabel="," android:keyWidth="10%p"/>
-        <Key android:codes="95" android:keyLabel="_" android:keyWidth="10%p"/>
-        <Key android:codes="95" android:keyLabel="_" android:keyWidth="10%p"/>
+        <Key android:codes="46" android:keyLabel="knt" android:keyWidth="10%p"/>
+        <Key android:codes="70" android:keyLabel="si\?" android:keyWidth="10%p"/>
+        <Key android:codes="44" android:keyLabel="isk" android:keyWidth="10%p"/>
+        <Key android:codes="95" android:keyLabel="\?n" android:keyWidth="10%p"/>
+        <Key android:codes="95" android:keyLabel="kal" android:keyWidth="10%p"/>
         <Key android:codes="10" android:keyIcon="@drawable/sym_keyboard_return" android:keyWidth="15%p" android:keyEdgeFlags="right"/>
     </Row>
 </Keyboard>
