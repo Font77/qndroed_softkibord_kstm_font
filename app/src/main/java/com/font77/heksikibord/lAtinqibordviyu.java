@@ -6,10 +6,6 @@ import android.inputmethodservice.KeyboardView;
 import android.util.AttributeSet;
 import android.view.inputmethod.InputMethodSubtype;
 
-/**
- * Created by DELL on 3/30/2017.
- */
-
 public class lAtinqibordviyu extends KeyboardView {
     static final int KEYCODE_OPTIONS = -100;
     // TODO: Move this into android.inputmethodservice.Keyboard

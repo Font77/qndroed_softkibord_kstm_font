@@ -6,7 +6,7 @@ public final class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
 //        fontsovArride.setDefaultFont(this, "DEFAULT", R.font.roboto_binjk_horijntl);
-        fontsovArride.setDefaultFont(this, "DEFAULT", R.font.roboto_heks_zk);
+        fontsovArride.setDefaultFont(this, "DEFAULT", R.font.roboto_heks_jk);
         fontsovArride.setDefaultFont(this, "MONOSPACE", R.font.ddssmonodc);
     }
 }

@@ -7,12 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ae2b813-f411-4380-a94d-37d7a7f2d32f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/release/hksu_kibord_jk.apk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/release/hksu_kibord_zk.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/release/app-release.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/sym_keyboard_h.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/sym_keyboard_lminu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/sym_keyboard_rminu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/sym_keyboard_h.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/sym_keyboard_h2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/sym_keyboard_lminu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/sym_keyboard_lminu3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/sym_keyboard_rminu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/sym_keyboard_rminu2_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/sym_keyboard_rminu3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drawable/normal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drawable/pressed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_0_2_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_1_3_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/MyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/roboto_binzk_horizntl.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/lAtinqibordviyu.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/lAtinqibordviyu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/sym_keyboard_return.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/sym_keyboard_return.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/input.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/input.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/symbols1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/symbols1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/symbols3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/symbols3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +43,7 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_S_API_15_AVDVIM" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="73ead6337d23" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
