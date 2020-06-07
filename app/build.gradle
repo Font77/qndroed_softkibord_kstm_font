@@ -8,6 +8,12 @@ android {
             keyAlias = 'ghrchor2'
             keyPassword '828420'
         }
+        debug {
+            storeFile file('/home/viml/Android/ghrchor.jks')
+            storePassword '828420'
+            keyAlias 'dibqghrcor'
+            keyPassword '828420'
+        }
     }
 
 //    lintOptions {
@@ -32,6 +38,9 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable false
         }
     }
     compileOptions {

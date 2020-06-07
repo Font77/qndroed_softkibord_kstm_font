@@ -18,26 +18,13 @@ import android.view.inputmethod.InputMethodSubtype;
 import java.util.ArrayList;
 import java.util.List;
 public class heksikibord extends InputMethodService implements KeyboardView.OnKeyboardActionListener {
-    static final boolean DEBUG = false;
+    static final boolean DEBUG = true;
     static final boolean PROCESS_HARD_KEYS = true;
-    private InputMethodManager mInputMethodManager;
-    private lAtinqibordviyu mInputView;
-    private CandidateView mCandidateView;
-    private CompletionInfo[] mCompletions;
-
-    private StringBuilder mComposing = new StringBuilder();
-    private boolean mPredictionOn;
-    private boolean mCompletionOn;
-    private int mLastDisplayWidth;
-    private boolean mCapsLock;
-    private long mLastShiftTime;
-    private long mMetaState;
-
-    private lAtinqibord mSymbolsKeyboard1;
-    private lAtinqibord mSymbolsKeyboard2;
-    private lAtinqibord mSymbolsKeyboard3;
-    private lAtinqibord mCurKeyboard;
-    private String mWordSeparators;
+    private InputMethodManager mInputMethodManager;private lAtinqibordviyu mInputView;private CandidateView mCandidateView;
+    private CompletionInfo[] mCompletions;private StringBuilder mComposing = new StringBuilder();private boolean mPredictionOn;
+    private boolean mCompletionOn;private int mLastDisplayWidth;private boolean mCapsLock;private long mLastShiftTime;private long mMetaState;
+    private lAtinqibord mSymbolsKeyboard1;private lAtinqibord mSymbolsKeyboard2;private lAtinqibord mSymbolsKeyboard3;
+    private lAtinqibord mCurKeyboard;private String mWordSeparators;
     @Override public void onCreate() {
         super.onCreate();
         mInputMethodManager = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
@@ -221,10 +208,6 @@ public class heksikibord extends InputMethodService implements KeyboardView.OnKe
     @Override public boolean onKeyDown(int keyCode, KeyEvent event) {
         switch (keyCode) {
             case KeyEvent.KEYCODE_BACK:
-                // The InputMethodService already takes care of the back
-                // key for us, to dismiss the input method if it is shown.
-                // However, our keyboard could be showing a pop-up window
-                // that back should dismiss, so we first allow it to do that.
                 if (event.getRepeatCount() == 0 && mInputView != null) {
                     if (mInputView.handleBack()) {
                         return true;

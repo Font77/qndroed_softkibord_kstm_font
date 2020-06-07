@@ -5,14 +5,27 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3ae2b813-f411-4380-a94d-37d7a7f2d32f" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/debug/app-debug.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/debug/output.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/release/app-release.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/release/hbord.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/popqp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/symbols11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/lAtinqibordviyu.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/lAtinqibordviyu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/method.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/method.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/symbols3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/symbols3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/heksikibord.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/heksikibord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/symbols1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/symbols1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qndroed_softkibord_kstm_font.iml" beforeDir="false" afterPath="$PROJECT_DIR$/qndroed_softkibord_kstm_font.iml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,6 +85,11 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ApkExportedModule" value="app" />
@@ -81,9 +99,10 @@
     <property name="ExportApk.Flavors" value="" />
     <property name="ExportApk.SignV1" value="true" />
     <property name="ExportApk.SignV2" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hbord" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -91,22 +110,16 @@
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Signing Configs" />
     <option name="BUILD_VARIANTS_TAB" value="Build Types" />
-    <option name="LAST_EDITED_SIGNING_CONFIG" value="ghrchor" />
-    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="debug" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -152,7 +165,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" editBeforeRun="true">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" editBeforeRun="true" activateToolWindowBeforeRun="false">
       <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -161,7 +174,7 @@
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
+      <option name="MODE" value="do_nothing" />
       <option name="CLEAR_LOGCAT" value="true" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
@@ -201,12 +214,6 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -261,5 +268,54 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="273" y="25" width="800" height="679" key="#Notifications" timestamp="1591539352885">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="273" y="25" width="800" height="679" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1591539352885" />
+    <state x="198" y="99" width="950" height="532" key="#PSD" timestamp="1591566033382">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="198" y="99" width="950" height="532" key="#PSD/0.0.1366.728@0.0.1366.728" timestamp="1591566033382" />
+    <state x="294" y="27" width="757" height="676" key="#app" timestamp="1591566686577">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="294" y="27" width="757" height="676" key="#app/0.0.1366.728@0.0.1366.728" timestamp="1591566686538" />
+    <state x="319" y="158" key="FileChooserDialogImpl" timestamp="1591567399623">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="319" y="158" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591567399623" />
+    <state width="1300" height="185" key="GridCell.Tab.0.bottom" timestamp="1591566932045">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1300" height="185" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591566932045" />
+    <state width="1300" height="185" key="GridCell.Tab.0.center" timestamp="1591566932044">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1300" height="185" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591566932044" />
+    <state width="1300" height="185" key="GridCell.Tab.0.left" timestamp="1591566932043">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1300" height="185" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591566932043" />
+    <state width="1300" height="185" key="GridCell.Tab.0.right" timestamp="1591566932044">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1300" height="185" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591566932044" />
+    <state x="289" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1591567366619">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="289" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1591567366619" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/font77/heksikibord/heksikibord.java</url>
+          <line>211</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

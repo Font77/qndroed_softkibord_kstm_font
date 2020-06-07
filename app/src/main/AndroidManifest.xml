@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.font77.heksikibord" >
-
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.font77.heksikibord" >
     <application android:name="com.font77.heksikibord.MyApplication" android:label="@string/ime_name">
-        <service android:name="heksikibord"
-            android:permission="android.permission.BIND_INPUT_METHOD">
+        <service android:name="heksikibord" android:permission="android.permission.BIND_INPUT_METHOD">
             <intent-filter>
                 <action android:name="android.view.InputMethod" />
             </intent-filter>
